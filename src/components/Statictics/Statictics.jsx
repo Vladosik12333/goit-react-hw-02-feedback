@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import { List, Item } from './Statictics.styled';
 
 export default function Statictics({
@@ -17,3 +18,11 @@ export default function Statictics({
     </List>
   );
 }
+
+Statictics.propTypes = {
+  good: propTypes.number.isRequired,
+  neutral: propTypes.number.isRequired,
+  bad: propTypes.number.isRequired,
+  total: propTypes.number.isRequired,
+  positiveTotal: propTypes.number.isRequired,
+};
