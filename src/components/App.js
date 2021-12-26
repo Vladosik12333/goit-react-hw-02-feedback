@@ -13,7 +13,7 @@ export default class App extends Component {
 
   onLeaveFeedback = name => {
     this.setState(state => {
-      return { ...state, [name]: state[name] + 1 };
+      return { [name]: state[name] + 1 };
     });
   };
 
